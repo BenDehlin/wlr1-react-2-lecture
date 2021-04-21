@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Parent from './components/Parent'
+
+//App.js is a Functional Component and contains no state
+//But renders our "Parent" component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* The Parent Component which will hold our relevant state is rendered in our JSX here */}
+      <Parent />
     </div>
   );
 }
